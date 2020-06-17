@@ -1,0 +1,68 @@
+#content .lists{
+	position: relative;
+	overflow: hidden;
+	margin: 10px 0 0 0;
+}
+#content .lists h3{
+	font-size: 24px;
+	font-weight: bold;
+	font-family: 'Arial', sans-serif;
+	color: #a5adb8;
+	margin: 0 0 20px 0;
+}
+#content .lists h3::first-letter{
+	color: #ae4b5d;
+}
+#content .lists .main_list{
+	position: relative;
+	overflow: hidden;
+}
+#content .lists .main_list li{
+	position: relative;
+	overflow: hidden;
+	width: 30%;
+	display: inline-block;
+	line-height: 1.5;
+	font-size: 14px;
+	color: #5c646e;
+}
+#content .lists .main_list li{
+	position: relative;
+	overflow: hidden;
+	width: 30%;
+	display: inline-block;
+  vertical-align: top;
+}
+#content .lists .main_list li .three_list {
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	display: inline-block;
+}
+#content .lists .main_list li .three_list li{
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	display: inline-block;
+}
+#content .lists .main_list li .three_list li p{
+	position: relative;
+	overflow: hidden;
+}
+#content .lists .main_list li .three_list li .markers::before{
+	content: '•';
+	color: #5c646e;
+	margin: 0 7px 0 0;
+}
+#content .lists .main_list li .three_list .inner_list{
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	display: inline-block;
+	margin: 0 0 0 14px;
+}
+#content .lists h4{
+	font-size: 14px;
+	font-family: 'Arial', sans-serif;
+	color: #5c646e;
+}
