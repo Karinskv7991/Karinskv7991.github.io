@@ -1,0 +1,65 @@
+.sliders{
+
+    .bx-wrapper {
+        -moz-box-shadow: none;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        border: none;
+        margin-bottom: 0;
+        .bx-controls-direction a{
+            margin-top: -37px;
+        }
+        .bx-prev{
+            @include transition($time);
+            left: 25px;
+            background: url(../images/arrow-left.png) no-repeat  0 0;
+            width: 47px;
+            height: 75px;
+            &:hover{
+                @include transform($argument);
+                @include transition($time);
+                background-position: 0 0;
+
+            }
+            @media (max-width: 1023px) and (min-width: 320px){
+              display: none;
+            }
+         }
+        .bx-next{
+            @include transition($time);
+            right: 25px;
+            background: url(../images/arrow-right.png) no-repeat 0 0;
+            width: 47px;
+            height: 75px;
+            &:hover{
+                @include transform($argument);
+                @include transition($time);
+                background-position: 0 0;
+            }
+            @media (max-width: 1023px) and (min-width: 320px){
+              display: none;
+            }
+            &:focus{
+                background-position: 0 0;
+            }
+        }
+        .bx-pager{
+            padding-top: 0;
+            bottom: 31px;
+            .bx-pager-item{
+                a{
+                    width: 15px;
+                    height:15px;
+                    background-color: #452a21;
+                    border-radius: 0;
+                    &:hover,
+                    &.active,
+                    &:focus{
+                        background-color:$color-rose;
+                    }
+
+                }
+            }
+        }
+    }
+}

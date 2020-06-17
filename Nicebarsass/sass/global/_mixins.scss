@@ -1,0 +1,44 @@
+@mixin standart{
+	width: 100%;
+	display: block;
+	overflow: hidden;
+	position: relative;
+}
+@mixin OS-bold{
+	font-family: 'OpenSans', sans-serif;
+	font-size: 18px;
+	font-weight: bold;
+}
+@mixin headline-font{
+	font-family: 'OpenSans', sans-serif;
+	font-size: 28px;
+	font-weight: bold;
+}
+@mixin MP-regular{
+	font-family: 'Myriad pro', sans-serif;
+	font-size: 18px;
+	font-weight: normal;
+}
+// это эффект при наведении
+@mixin hov1{
+	&:hover {
+	 opacity: 0.8;
+	 box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.5);
+	 background-color: $color-rose;
+	 transition: all .2s ease-out;
+ }
+}
+@mixin transform($argument) {
+	   -moz-transform: $argument;
+	     -o-transform: $argument;
+	    -ms-transform: $argument;
+	-webkit-transform: $argument;
+          transform: $argument;
+}
+@mixin transition($time) {
+  -webkit-transition: all $time ease-out;
+  -moz-transition: all $time ease-out;
+  -ms-transition: all $time ease-out;
+  -o-transition: all $time ease-out;
+  transition: all $time ease-out;
+}

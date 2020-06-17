@@ -1,0 +1,47 @@
+footer{
+	background-color: #1b1b1b;
+	background-size: cover;
+	text-align: center;
+	#button{
+	  display: block;
+	  background: url(../images/arrow-UP.png) no-repeat center;
+	  background-color: $color-rose;
+	  width: 60px;
+	  height: 60px;
+	  border: 1px solid #ffffff;
+	  border-radius: 2px;
+	  position: absolute;
+	  left: 47.5%;
+	  transform: translate(0, -50%);
+		@media (max-width: 1023px) and (min-width: 768px){
+			left: 46%;
+		}
+		@media (max-width: 768px){
+			left: 45%;
+		}
+		@media (max-width: 440px){
+			left: 43%
+		}
+	  &:hover{
+	    @include transition($time);
+		 	transform: translate(0, -50%) scale(1.1, 1.1);
+
+	  }
+	}
+	p{
+		display: inline-block;
+		font-size: 18px;
+		font-family: "Roboto";
+		font-weight: 300;
+		margin-top: 57px;
+		padding-top: 32px;
+		width: 100%;
+		border-top: 4px solid #1f1e1e;
+		color: #ffffff;
+		text-transform: uppercase;
+		opacity: 0.8;
+		@media (max-width: 768px){
+			font-size: 15px;
+		}
+	}
+}

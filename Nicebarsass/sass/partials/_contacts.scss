@@ -1,0 +1,229 @@
+.contacts{
+  position: relative;
+  h2{
+    text-align: center;
+    @include headline-font;
+    color: $color-black;
+    position: relative;
+    margin-top: 70px;
+    &:after{
+      display: block;
+      content: '';
+      position: absolute;
+      left: 50%;
+      margin: 12px 0 20px -50px;
+    	height: 5px;
+    	width: 100px;
+    	background-color: $color-rose;
+    }
+  }
+  p{
+    font-family: 'Myriad pro', sans-serif;
+  	font-size: 14px;
+  	font-weight: normal;
+    color: #6d6e77;
+    text-align: center;
+    margin-top: 38px;
+  }
+    ul{
+      display: flex;
+      justify-content: space-between;
+      margin: 65px auto 60px;
+      width: 512px;
+      text-align: center;
+      @media (max-width: 767px) and (min-width: 478px){
+        justify-content: space-around;
+      }
+      @media (max-width: 477px){
+        flex-direction: column;
+        align-items: center;
+        width: auto;
+        margin: 35px auto 30px;
+      }
+      li{
+        position: relative;
+        @media (max-width: 477px){
+          padding: 0 0 15px 0;
+          margin-bottom: 20px;
+        }
+      }
+      .email{
+        &:after{
+          content: 'info.nicebar@gmail.com';
+          position: absolute;
+          bottom: -20px;
+          left: -55px;
+          color: #7a7a7a;
+          @media (max-width: 477px){
+            bottom: 0;
+          }
+        }
+        &:hover{
+          @include transition($time);
+          @include transform($argument);
+        }
+        a{
+          display: block;
+          text-decoration: none;
+          img{
+
+          }
+        }
+      }
+      .phone{
+        &:after{
+          content: '+7 937 99 92';
+          position: absolute;
+          width: 100px;
+          bottom: -20px;
+          left: -40px;
+          color: #7a7a7a;
+          @media (max-width: 477px){
+            bottom: 0;
+          }
+        }
+        &:hover{
+          @include transition($time);
+          @include transform($argument);
+        }
+        a{
+          text-decoration: none;
+        }
+      }
+      .twitter{
+        &:after{
+          content: '@nicebarr';
+          position: absolute;
+          width: 100px;
+          bottom: -20px;
+          left: -40px;
+          color: #7a7a7a;
+          @media (max-width: 477px){
+            bottom: 0;
+          }
+        }
+        &:hover{
+          @include transition($time);
+          @include transform($argument);
+        }
+        a{
+          text-decoration: none;
+        }
+      }
+  }
+  form{
+    display: block;
+    position: relative;
+    margin-bottom: 145px;
+    fieldset{
+      position: relative;
+      margin: 0 auto;
+      width: 730px;
+      @media (max-width: 1023px){
+        width: 300px;
+      }
+      @media (max-width: 440px){
+        width: 260px;
+
+      }
+      .left-side{
+        display: block;
+        float: left;
+        width: 350px;
+        @media (max-width: 1023px){
+          float: none;
+        }
+        @media (max-width: 440px){
+          width: 300px;
+
+        }
+        input[type="text"],[type="email"]{
+          width: 335px;
+          height: 30px;
+          margin: 0 0 13px 0;
+          border: 1px solid #878787;
+          font-size: 14px;
+          font-family: "Roboto";
+          padding-left: 10px;
+          @media (max-width: 440px){
+            width: 287px;
+          }
+        }
+        input::-webkit-input-placeholder{
+          color: #2a2a2a;
+          font-family: "Roboto";
+          font-size: 14px;
+          font-weight: normal;
+        }
+      }
+      textarea{
+        position: relative;
+        overflow: hidden;
+        width: 350px;
+        height: 120px;
+        resize: none;
+        border: 1px solid #878787;
+        padding: 14px 0 0 15px;
+        box-sizing: border-box;
+        float: right;
+        @media (max-width: 1023px){
+          float: none;
+        }
+        @media (max-width: 440px){
+          width: 300px;
+
+        }
+      }
+      textarea::-webkit-input-placeholder{
+        color: #2a2a2a;
+        font-family: "Roboto";
+        font-size: 14px;
+        font-weight: normal;
+      }
+      input[type="submit"]{
+        background-color: $color-rose;
+        width: 125px;
+        height: 35px;
+        background-image: url(../images/submit-img.png);
+        background-size: auto;
+        background-position: left 4px top 8px;
+        background-repeat: no-repeat;
+        position: absolute;
+        bottom: -65px;
+        left: 50%;
+        transform: translate(-50%);
+        padding-left: 8px;
+        color: #ffffff;
+        border: none;
+        border-radius: 5px;
+        font-size: 14px;
+        cursor: pointer;
+        &:hover{
+					transform: translate(-50%) scale(1.1, 1.1);
+					@include transition($time);
+				}
+      }
+      @media (max-width: 1023px) and (min-width: 813px){
+        float: none;
+      }
+    }
+  }
+}
+// #button{
+//   display: block;
+//   background: url(../images/arrow-UP.png) no-repeat center;
+//   background-color: $color-rose;
+//   width: 60px;
+//   height: 60px;
+//   text-align: center;
+//   border: 1px solid #ffffff;
+//   border-radius: 2px;
+//   position: absolute;
+//   left: 50%;
+//   bottom: 0;
+//   transform: translate(-50, 50%);
+//   &:hover{
+//     @include transition($time);
+//     @include transform($argument);
+//   }
+// }

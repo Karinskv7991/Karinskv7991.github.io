@@ -1,0 +1,60 @@
+.statistic{
+  display: block;
+  overflow: hidden;
+  background: url(../images/bg-with-socials.png);
+  width: 100%;
+  min-height: 300px;
+  background-size: cover;
+  ul{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    justify-content: center;
+    @media (max-width: 567px){
+      flex-direction: column;
+      align-items: center;
+    }
+    li{
+      background-color: rgba(246, 150, 121, 0.3);
+      text-align: center;
+      width: 350px;
+      height: 300px;
+      @include transition($time);
+      margin-right: 30px;
+      @media (max-width: 567px){
+        margin: 0 auto 20px;
+      }
+      &:last-child{
+				margin-right: 0;
+        @media (max-width: 567px){
+          margin: 0 auto;
+        }
+      }
+      &:hover{
+        @include transition($time);
+        background-color: $color-rose;
+      }
+      img{
+        margin-top: 68px;
+      }
+      p{
+        font-size: 27px;
+        font-weight: bold;
+        color: #ffffff;
+        text-transform: uppercase;
+        margin: 20px 0 6px 0;
+        	@media (max-width: 767px){
+            font-size: 20px;
+          }
+      }
+      h4{
+        font-size: 27px;
+        color: #ffffff;
+        text-transform: uppercase;
+        	@media (max-width: 767px){
+            font-size: 20px;
+          }
+      }
+    }
+  }
+}
