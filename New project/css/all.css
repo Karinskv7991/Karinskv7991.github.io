@@ -127,7 +127,7 @@ body {
 }
 
 .nav {
-  display: none;
+  display: flex;
   position: fixed;
   left: 0;
   top: 0;
@@ -135,7 +135,12 @@ body {
   bottom: 0;
   align-items: center;
   justify-content: center;
+  transition: all 0.5s ease;
   background: linear-gradient(180deg, #7d76ff 0%, #2c968c 0%, #85c1cb 0%, #56a6d0 49%, #cceeff 100%, #a6edff 100%);
+}
+.nav_hidden {
+  bottom: 100%;
+  overflow: hidden;
 }
 
 .logo {
@@ -188,12 +193,29 @@ body {
   height: 3px;
   background: #000;
   position: absolute;
+  transition: all 0.5s ease;
 }
 .burger__line:after {
   top: -7px;
 }
 .burger__line:before {
   top: 7px;
+}
+
+.close .burger__line {
+  background: transparent;
+}
+
+.close .burger__line:before {
+  transform: rotate(45deg);
+  transform-origin: 50% 50%;
+  top: 0;
+}
+
+.close .burger__line:after {
+  transform: rotate(-45deg);
+  transform-origin: 50% 50%;
+  top: 0;
 }
 
 @media screen and (min-width: 768px) {

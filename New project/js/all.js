@@ -14,4 +14,5 @@
       }
       function menuClose() {
         nav.classList.add("nav_hidden");
+				burger.classList.remove("close");
       }
