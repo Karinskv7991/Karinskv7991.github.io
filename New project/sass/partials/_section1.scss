@@ -1,0 +1,32 @@
+.info {
+	padding: 70px 0 0 0;
+	text-align: center;
+	&__headline {
+		font-size: 32px;
+		font-weight: bold;
+		padding-bottom: 25px;
+	}
+	&__text {
+		line-height: 1.3;
+		padding-bottom: 40px;
+	}
+	&__btn {
+		color: #F2F2F2;
+		font-size: 12px;
+		font-weight: bold;
+		padding: 13px 24px;
+		background: #FF6422;
+		border-radius: 28.0575px;
+		transition: all 0.5s ease;
+		&:hover{
+			background: rgba(255, 100, 34, 0.8);
+			padding: 13px 35px;
+		}
+	}
+	&__right {
+		padding: 50px 0 0 0;
+	}
+	&__img {
+		max-width: 100%;
+	}
+}
