@@ -223,9 +223,16 @@ body {
     background: inherit;
   }
 
+  .nav__list {
+    padding: 1px;
+  }
+
   .nav__item {
     display: inline-block;
     box-sizing: border-box;
+  }
+  .nav__item:nth-child(6) {
+    padding-right: 35px;
   }
 
   .nav__link {
@@ -246,6 +253,15 @@ body {
 .nav__link_signUp:hover {
     border-color: #FE3745;
     background: transparent;
+  }
+}
+@media screen and (max-width: 992px) {
+  .nav__item:nth-child(6) {
+    padding-right: 0;
+  }
+
+  .nav__link {
+    padding: 6px 12px;
   }
 }
 .info {

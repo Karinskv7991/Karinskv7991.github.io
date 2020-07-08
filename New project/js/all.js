@@ -13,6 +13,6 @@
         navLink[i].addEventListener("click", menuClose);
       }
       function menuClose() {
-        nav.classList.add("nav_active");
+        nav.classList.remove("nav_active");
 				burger.classList.remove("close");
       }

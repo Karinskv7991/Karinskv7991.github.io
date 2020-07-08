@@ -28,7 +28,6 @@ body {
 	background: linear-gradient(180deg, rgba(125,118,255,1) 0%, rgba(44,150,140,1) 0%, rgba(133,193,203,1) 0%, rgba(86,166,208,1) 49%, rgba(204,238,255,1) 100%, rgba(166,237,255,1) 100%);
 	&_active {
 		bottom: 0;
-		// overflow: hidden;
 	}
 }
 .logo {
@@ -38,9 +37,6 @@ body {
 }
 .nav__item {
 	text-align: center;
-	// &:last-child {
-	// 	padding: 0;
-	// }
 }
 .nav__link {
 	font-size: 18px;
@@ -104,9 +100,15 @@ body {
 		position: static;
 		background: inherit;
 	}
+	.nav__list {
+		padding: 1px;
+	}
 	.nav__item {
 		display: inline-block;
 		box-sizing: border-box;
+		&:nth-child(6) {
+			padding-right: 35px;
+		}
 	}
 	.nav__link {
 		text-transform: none;
@@ -124,5 +126,15 @@ body {
 			border-color: #FE3745;
 			background: transparent;
 		}
+	}
+}
+@media screen and (max-width: 992px) {
+	.nav__item {
+		&:nth-child(6) {
+			padding-right: 0;
+		}
+	}
+	.nav__link {
+		padding: 6px 12px;
 	}
 }
