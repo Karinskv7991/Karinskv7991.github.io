@@ -5,7 +5,7 @@
 
       burger.addEventListener("click", menu);
       function menu() {
-        nav.classList.toggle("nav_hidden");
+        nav.classList.toggle("nav_active");
         burger.classList.toggle("close");
       }
 
@@ -13,6 +13,6 @@
         navLink[i].addEventListener("click", menuClose);
       }
       function menuClose() {
-        nav.classList.add("nav_hidden");
+        nav.classList.add("nav_active");
 				burger.classList.remove("close");
       }

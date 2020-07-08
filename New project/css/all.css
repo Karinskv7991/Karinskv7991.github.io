@@ -133,15 +133,15 @@ body {
   left: 0;
   top: 0;
   right: 0;
-  bottom: 0;
+  bottom: 100%;
+  overflow: hidden;
   align-items: center;
   justify-content: center;
   transition: all 0.5s ease;
   background: linear-gradient(180deg, #7d76ff 0%, #2c968c 0%, #85c1cb 0%, #56a6d0 49%, #cceeff 100%, #a6edff 100%);
 }
-.nav_hidden {
-  bottom: 100%;
-  overflow: hidden;
+.nav_active {
+  bottom: 0;
 }
 
 .logo {
@@ -153,21 +153,15 @@ body {
 .nav__item {
   text-align: center;
 }
-.nav__item:last-child {
-  padding: 0;
-}
 
 .nav__link {
   font-size: 18px;
   text-transform: uppercase;
   color: #000000;
   line-height: 2;
-  padding: 6px 20px;
-  border-radius: 26px;
 }
 .nav__link:hover {
   color: #FFFFFF;
-  background: #FF6422;
   transition: 0.7s ease 0s;
 }
 
@@ -224,8 +218,34 @@ body {
     display: none;
   }
 
+  .nav {
+    position: static;
+    background: inherit;
+  }
+
   .nav__item {
     display: inline-block;
+    box-sizing: border-box;
+  }
+
+  .nav__link {
+    text-transform: none;
+    font-size: 16px;
+    padding: 6px 20px;
+    border-radius: 26px;
+  }
+  .nav__link:hover {
+    background: #FF6422;
+  }
+
+  .nav__link_login,
+.nav__link_signUp {
+    border: 1px solid transparent;
+  }
+  .nav__link_login:hover,
+.nav__link_signUp:hover {
+    border-color: #FE3745;
+    background: transparent;
   }
 }
 .info {
@@ -273,21 +293,23 @@ body {
 }
 
 .container {
+  display: flex;
+  flex-wrap: wrap;
   margin: 0 auto;
   max-width: 1170px;
   text-align: center;
   justify-content: space-around;
-  flex: 0 0 33.333%;
   align-items: stretch;
+  box-sizing: border-box;
 }
 .container__item {
+  display: flex;
+  flex-direction: column;
   border: 1px solid #7EB6FF;
   padding: 55px 30px 24px;
-  margin-right: 60px;
-  margin-top: auto;
-}
-.container__item:last-child {
-  margin-right: 0;
+  width: 330px;
+  box-sizing: border-box;
+  justify-content: space-around;
 }
 .container__img {
   display: block;
@@ -304,6 +326,7 @@ body {
 .container__text {
   color: #808080;
   line-height: 19px;
+  font-size: 12px;
 }
 
 @media screen and (min-width: 768px) {
@@ -314,15 +337,13 @@ body {
     color: #000000;
     padding: 0 0 70px 0;
   }
-  .slider__subheadline {
+
+  .container__subheadline {
     font-size: 24px;
     line-height: 38px;
   }
-  .slider__text {
+  .container__text {
     line-height: 25px;
-  }
-
-  .container {
-    display: flex;
+    font-size: 16px;
   }
 }
