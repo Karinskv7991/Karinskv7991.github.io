@@ -21,16 +21,18 @@
 
 			// слайдер для 2 секции
 
-			$('.container').slick();
+			$('.container').slick({
+				arrows: true,
+				dots: true,
+				adaptiveHeight: true,
+				slidesToShow: 1,
+			});
 			// ниже, чтобы слайдер появлялся на экранах, разрешение которых ниже 768px
 			$(window).on('load resize', function() {
   if ($(window).width() < 768) {
     $('.container:not(.slick-initialized)').slick({
-      centerMode: true,
-      dots: true,
       infinite: true,
-      speed: 100,
-      slidesToShow: 1
+      speed: 500,
     });
   } else {
     $(".container.slick-initialized").slick("unslick");

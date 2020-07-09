@@ -1,5 +1,6 @@
 .slider {
 	padding: 70px 0 0 0;
+	min-width: 0;
 	&__headline{
 		@include fontHeadline;
 		padding: 0 0 50px 0;
@@ -7,19 +8,20 @@
 }
 .container {
 	display: flex;
-	flex-wrap: wrap;
 	margin: 0 auto;
 	max-width: 1170px;
+	min-width: 0;
 	text-align: center;
-	justify-content: space-around;
 	align-items: stretch;
 	box-sizing: border-box;
 	&__item {
 		display: flex;
 		flex-direction: column;
 		border: 1px solid #7EB6FF;
-		padding: 55px 30px 24px;
+		padding: 45px 30px 24px;
+		margin: 0 33px;
 		width: 330px;
+		min-width: 0;
 		box-sizing: border-box;
 		justify-content: space-around;
 		margin-bottom: 20px;
@@ -50,6 +52,12 @@
 		}
 	}
 	.container {
+		justify-content: space-around;
+		flex-wrap: wrap;
+		&__item {
+			margin: 0 0 20px 0;
+			justify-content: space-around;
+		}
 		&__subheadline {
 			font-size: 24px;
 			line-height: 38px;
