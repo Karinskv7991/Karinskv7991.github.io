@@ -1,11 +1,10 @@
 body {
-	padding: 40px 15px 0;
 	min-height: 100vh;
 	font-family: 'Inter', sans-serif;
-	box-sizing: border-box;
-	background: url(../images/bg.png) top right/80% auto no-repeat;
+	// box-sizing: border-box;
 }
 .header {
+	margin-top: 40px;
 }
 .wrapper {
 	display: flex;
@@ -13,6 +12,8 @@ body {
 	align-items: center;
 	max-width: 1240px;
 	margin: 0 auto;
+	margin: 0 15px 0;
+	flex-direction: row;
 }
 .nav {
 	display: flex;
@@ -93,6 +94,13 @@ body {
 	top: 0;
 }
 @media screen and (min-width: 768px){
+	.wrapper {
+		margin: 0 100px 0;
+		flex-direction: row;
+	}
+	.header {
+		margin-top: 50px;
+	}
 	.burger {
 		display: none;
 	}
@@ -122,6 +130,7 @@ body {
 	.nav__link_login,
  	.nav__link_signUp		{
 		border: 1px solid transparent;
+		color: #ffffff;
 		&:hover {
 			border-color: #FE3745;
 			background: transparent;
