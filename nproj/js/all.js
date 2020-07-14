@@ -21,26 +21,28 @@
 
 			// слайдер для 2 секции
 
-			$('.container').slick({
+			$('.slider').slick({
 				arrows: true,
 				prevArrow: '<i class="fas fa-chevron-left prev_arrow"></i>',
 				nextArrow: '<i class="fas fa-chevron-right next_arrow"></i>',
-				dots: false,
-				slidesToShow: 3,
+				dots: true,
+				slidesToShow: 1,
 				responsive: [
-		      {
+		    {
 		      breakpoint: 768,
 		      settings: {
 		        slidesToShow: 2,
-						dots: true,
-		      }
-		    },
-		    {
-		      breakpoint: 540,
-		      settings: {
-		        slidesToShow: 1,
 		        slidesToScroll: 1,
 						dots: true,
+		      }
+		    }
+				{
+		      breakpoint: 992,
+		      settings: {
+		        slidesToShow: 3,
+		        slidesToScroll: 1,
+						dots: true,
+						arrows: false,
 		      }
 		    }
 		  ]

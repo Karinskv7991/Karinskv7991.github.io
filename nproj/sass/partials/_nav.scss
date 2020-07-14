@@ -1,6 +1,7 @@
 body {
 	min-height: 100vh;
 	font-family: 'Inter', sans-serif;
+	width: 100%;
 }
 .wrapper {
 	max-width: 1240px;
@@ -15,6 +16,10 @@ body {
 }
 .header {
 	padding-top: 40px;
+	position: fixed;
+	width: 100%;
+	top: 0px;
+	z-index: 100;
 }
 .logo {
 	font-family: 'Roboto', sans-serif;
@@ -99,17 +104,22 @@ body {
 		padding: 0 100px 0;
 	}
 	.header {
-		padding-top: 70px;
+		padding-top: 60px;
 	}
+	.logo {
+		font-size: 48px;
+	}
+	.nav__list {
+		padding: 1px;
+	}
+}
+@media screen and (min-width: 992px) {
 	.burger {
 		display: none;
 	}
 	.nav {
 		position: static;
 		background: inherit;
-	}
-	.nav__list {
-		padding: 1px;
 	}
 	.nav__item {
 		display: inline-block;
@@ -121,7 +131,7 @@ body {
 	.nav__link {
 		text-transform: none;
 		font-size: 16px;
-		padding: 6px 20px;
+		padding: 6px 17px;
 		border-radius: 26px;
 		&:hover {
 			background: #FF6422;
@@ -137,13 +147,13 @@ body {
 		}
 	}
 }
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1062px) {
 	.nav__item {
 		&:nth-child(6) {
 			padding-right: 0;
 		}
 	}
 	.nav__link {
-		padding: 6px 12px;
+		padding: 6px 10px;
 	}
 }
