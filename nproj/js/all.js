@@ -35,7 +35,7 @@
 		        slidesToScroll: 1,
 						dots: true,
 		      }
-		    }
+		    },
 				{
 		      breakpoint: 992,
 		      settings: {
