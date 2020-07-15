@@ -18,17 +18,18 @@
     font-size: 16px;
   }
   &__btn {
-    color: #F2F2F2;
+		display: inline-block;
+		background: #FF6422;
+		border-radius: 28.0575px;
+		padding: 13px 24px;
+		color: #F2F2F2;
     font-size: 12px;
     font-weight: bold;
-    padding: 13px 24px;
-    background: #FF6422;
-    border-radius: 28.0575px;
-    transition: all 0.5s ease;
-    &:hover{
-      background: rgba(255, 100, 34, 0.8);
-      padding: 13px 35px;
-    }
+		transition: all 0.5s ease;
+		text-align: center;
+		&:hover{
+			background: rgba(255, 100, 34, 0.8);
+		}
   }
   &__right {
     padding: 50px 0 0 0;
