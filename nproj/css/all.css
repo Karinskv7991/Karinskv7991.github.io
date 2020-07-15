@@ -436,14 +436,17 @@ body {
 .slider__img {
   display: block;
   margin: 0 auto;
-  padding-bottom: 16px;
+  margin-bottom: 15px;
   max-width: 100%;
 }
 .slider__subheadline {
+  height: 32px;
   font-size: 16px;
   font-weight: 500;
   padding-bottom: 15px;
   line-height: 25px;
+  text-align: center;
+  vertical-align: middle;
 }
 .slider__text {
   color: #808080;
@@ -466,6 +469,7 @@ body {
   .slider__subheadline {
     font-size: 24px;
     line-height: 38px;
+    height: 48px;
   }
   .slider__text {
     line-height: 25px;
@@ -493,10 +497,6 @@ body {
 .slick-track {
   display: flex;
   align-items: flex-start;
-}
-
-.slick-slide {
-  width: 100%;
 }
 
 .slider {
