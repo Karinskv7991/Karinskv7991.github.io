@@ -2,16 +2,18 @@
 	overflow: hidden;
 }
 .draggable  {
-	width: 100%;
+	// width: 100%;
+	display: flex;
+	align-items: stretch;
 }
 .slick-track {
 	display: flex;
-	align-items: stretch;
+	align-items: flex-start;
 	// overflow: hidden;
 }
 .slick-slide {
-	width: 330px;
-	box-sizing: border-box;
+	width: 100%;
+	// box-sizing: border-box;
 }
 .slider {
 	position: relative;
@@ -28,7 +30,7 @@
 	}
 	.prev_arrow {
 		font-size: 33px;
-		left: -15px;
+		left: 0;
 		position: absolute;
 		color: #7EB6FF;
 		opacity: 0.3;
@@ -39,7 +41,7 @@
 	}
 	.next_arrow {
 		font-size: 33px;
-		right: -15px;
+		right: 0;
 		position: absolute;
 		color: #7EB6FF;
 		opacity: 0.3;

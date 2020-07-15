@@ -51,7 +51,7 @@
 
 			$(window).on("scroll", function() {
 			    var scrollPos = $(window).scrollTop();
-			    if (scrollPos <= 0) {
+			    if (scrollPos > 0) {
 			        $('.header').addClass('top-of-page');
 			    } else {
 			        $('.header').removeClass('top-of-page');
