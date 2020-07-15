@@ -15,11 +15,17 @@ body {
 	flex-direction: row;
 }
 .header {
-	padding-top: 40px;
+	padding-top: 8px;
 	position: fixed;
 	width: 100%;
 	top: 0px;
 	z-index: 100;
+	background: rgba(126, 182, 255, 0.4);
+	transition: all 0.3s ease;
+}
+.top-of-page {
+	background: transparent;
+	padding-top: 40px;
 }
 .logo {
 	font-family: 'Roboto', sans-serif;
@@ -104,6 +110,9 @@ body {
 		padding: 0 100px 0;
 	}
 	.header {
+		padding-top: 5px;
+	}
+	.top-of-page {
 		padding-top: 60px;
 	}
 	.logo {

@@ -7,24 +7,13 @@
   }
 }
 .slider {
-	display: flex;
-	margin: 0 auto;
-	max-width: 1170px;
-	min-width: 0;
 	text-align: center;
-	align-items: stretch;
 	box-sizing: border-box;
 	&__item {
-		display: flex;
-		flex-direction: column;
 		border: 1px solid #7EB6FF;
-		padding: 45px 30px 24px;
-		margin: 0 33px;
-		width: 330px;
-		min-width: 0;
+		padding: 45px 20px 24px;
 		box-sizing: border-box;
-		justify-content: space-around;
-		margin-bottom: 20px;
+		margin: 0 10px;
 	}
 	&__img {
 		display: block;
@@ -52,12 +41,6 @@
 		}
 	}
 	.slider {
-		justify-content: space-around;
-		flex-wrap: wrap;
-		&__item {
-			margin: 0 0 20px 0;
-			justify-content: space-around;
-		}
 		&__subheadline {
 			font-size: 24px;
 			line-height: 38px;

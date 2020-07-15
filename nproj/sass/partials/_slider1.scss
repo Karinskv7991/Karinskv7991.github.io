@@ -2,19 +2,20 @@
 	overflow: hidden;
 }
 .draggable  {
-	display: flex;
-	align-items: stretch;
+	width: 100%;
 }
 .slick-track {
 	display: flex;
 	align-items: stretch;
-	overflow: hidden;
+	// overflow: hidden;
 }
 .slick-slide {
 	width: 330px;
+	box-sizing: border-box;
 }
 .slider {
 	position: relative;
+	width: 100%;
 	.slick-arrow {
 		position: absolute;
 		top: 50%;
@@ -27,7 +28,7 @@
 	}
 	.prev_arrow {
 		font-size: 33px;
-		left: 0;
+		left: -15px;
 		position: absolute;
 		color: #7EB6FF;
 		opacity: 0.3;
@@ -38,7 +39,7 @@
 	}
 	.next_arrow {
 		font-size: 33px;
-		right: 0;
+		right: -15px;
 		position: absolute;
 		color: #7EB6FF;
 		opacity: 0.3;

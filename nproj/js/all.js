@@ -25,11 +25,11 @@
 				arrows: true,
 				prevArrow: '<i class="fas fa-chevron-left prev_arrow"></i>',
 				nextArrow: '<i class="fas fa-chevron-right next_arrow"></i>',
-				dots: true,
-				slidesToShow: 1,
+				dots: false,
+				slidesToShow: 3,
 				responsive: [
 		    {
-		      breakpoint: 768,
+		      breakpoint: 992,
 		      settings: {
 		        slidesToShow: 2,
 		        slidesToScroll: 1,
@@ -37,13 +37,23 @@
 		      }
 		    },
 				{
-		      breakpoint: 992,
+		      breakpoint: 768,
 		      settings: {
-		        slidesToShow: 3,
+		        slidesToShow: 1,
 		        slidesToScroll: 1,
 						dots: true,
-						arrows: false,
 		      }
 		    }
 		  ]
+			});
+
+			// появляющийся фон для навигации
+
+			$(window).on("scroll", function() {
+			    var scrollPos = $(window).scrollTop();
+			    if (scrollPos <= 0) {
+			        $('.header').addClass('top-of-page');
+			    } else {
+			        $('.header').removeClass('top-of-page');
+			    }
 			});
