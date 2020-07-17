@@ -1,0 +1,63 @@
+.graph {
+	padding-top: 100px;
+	margin: 0 auto;
+	min-height: 100vh;
+	text-align: center;
+	&__headline {
+		@include fontHeadline;
+		padding-bottom: 20px;
+	}
+	&__left {
+		display: flex;
+    flex-direction: column;
+  }
+	&__img {
+    max-width: 100%;
+  }
+	&__right {
+    padding: 20px 0 0 0;
+  }
+	&__subheadline {
+		font-size: 24px;
+		font-weight: 500;
+		padding-bottom: 15px;
+	}
+	&__text {
+		color: $colorgray;
+		line-height: 19px;
+		font-size: 12px;
+		padding: 0 10px;
+	}
+}
+.column {
+	display: flex;
+	flex-direction: column;
+}
+@media screen and (min-width: 768px) {
+	.graph {
+		&__headline {
+			@include fontHeadlineBig;
+			padding-bottom: 50px;
+		}
+		&__subheadline {
+			font-size: 36px;
+		}
+		&__text {
+			color: $colorgray;
+			line-height: 25px;
+			font-size: 16px;
+			padding: 0;
+			max-width: 450px;
+		}
+		&__right {
+			text-align: left;
+		}
+		&__left {
+			flex-direction: row;
+		}
+	}
+	.column {
+		display: flex;
+		flex-direction: row;
+	}
+}

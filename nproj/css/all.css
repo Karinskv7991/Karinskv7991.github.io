@@ -348,6 +348,9 @@ body {
 @media screen and (min-width: 768px) {
   .info {
     min-height: 100vh;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
   }
   .info__btn {
     font-size: 16px;
@@ -363,7 +366,6 @@ body {
     max-width: 600px;
   }
   .info__left {
-    padding: 70px 0 0 0;
     text-align: left;
   }
   .info__right {
@@ -373,6 +375,8 @@ body {
   .column {
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -391,7 +395,6 @@ body {
     max-width: 600px;
   }
   .info__left {
-    padding: 120px 0 0 0;
     text-align: left;
   }
   .info__right {
@@ -428,11 +431,9 @@ body {
   border: 1px solid #7EB6FF;
   padding: 45px 20px 24px;
   box-sizing: border-box;
-  display: flex;
-  width: 330px;
+  width: 330px !important;
   min-width: 0;
   margin: 0 10px;
-  justify-content: space-around;
 }
 .slider__img {
   display: block;
@@ -464,9 +465,6 @@ body {
     padding: 0 0 70px 0;
   }
 
-  .slider {
-    justify-content: space-around;
-  }
   .slider__subheadline {
     font-size: 24px;
     line-height: 38px;
@@ -482,10 +480,6 @@ body {
     margin: 0 30px;
   }
 }
-.section {
-  min-height: 100vh;
-}
-
 .slick-list {
   overflow: hidden;
 }
@@ -560,4 +554,75 @@ body {
 }
 .slider .slick-active button:before {
   content: "";
+}
+
+.graph {
+  padding-top: 100px;
+  margin: 0 auto;
+  min-height: 100vh;
+  text-align: center;
+}
+.graph__headline {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: #000000;
+  padding-bottom: 20px;
+}
+.graph__left {
+  display: flex;
+  flex-direction: column;
+}
+.graph__img {
+  max-width: 100%;
+}
+.graph__right {
+  padding: 20px 0 0 0;
+}
+.graph__subheadline {
+  font-size: 24px;
+  font-weight: 500;
+  padding-bottom: 15px;
+}
+.graph__text {
+  color: #808080;
+  line-height: 19px;
+  font-size: 12px;
+  padding: 0 10px;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 768px) {
+  .graph__headline {
+    text-align: center;
+    font-size: 48px;
+    font-weight: bold;
+    color: #000000;
+    padding-bottom: 50px;
+  }
+  .graph__subheadline {
+    font-size: 36px;
+  }
+  .graph__text {
+    color: #808080;
+    line-height: 25px;
+    font-size: 16px;
+    padding: 0;
+    max-width: 450px;
+  }
+  .graph__right {
+    text-align: left;
+  }
+  .graph__left {
+    flex-direction: row;
+  }
+
+  .column {
+    display: flex;
+    flex-direction: row;
+  }
 }

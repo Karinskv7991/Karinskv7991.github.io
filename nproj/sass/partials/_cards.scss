@@ -18,11 +18,11 @@
 		border: 1px solid #7EB6FF;
 		padding: 45px 20px 24px;
 		box-sizing: border-box;
-		display: flex;
-		width: 330px;
+		// display: flex;
+		width: 330px !important;
 		min-width: 0;
 		margin: 0 10px;
-		justify-content: space-around;
+		// justify-content: space-around;
 	}
 	&__img {
 		display: block;
@@ -53,7 +53,7 @@
 		}
 	}
 	.slider {
-		justify-content: space-around;
+		// justify-content: space-around;
 		&__subheadline {
 			font-size: 24px;
 			line-height: 38px;
@@ -71,7 +71,4 @@
 			margin: 0 30px;
 		}
 	}
-}
-.section {
-	min-height: 100vh;
 }

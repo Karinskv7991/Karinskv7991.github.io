@@ -45,6 +45,9 @@
 @media screen and (min-width: 768px) {
 	.info {
 		min-height: 100vh;
+		display: flex;
+		align-items: center;
+		box-sizing: border-box;
 		&__btn {
 			font-size: 16px;
 		}
@@ -59,7 +62,6 @@
 			max-width: 600px;
 		}
 		&__left {
-			padding: 70px 0 0 0;
 			text-align: left;
 		}
 		&__right {
@@ -69,12 +71,11 @@
 	.column {
 		display: flex;
 		flex-direction: row;
+		justify-content: center;
+		align-items: center;
 	}
 }
 @media screen and (min-width: 1024px){
-	// .wrapper{
-	// 	flex-direction: row;
-	// }
 	.info {
 		&__btn {
 			font-size: 18px;
@@ -91,7 +92,6 @@
 			max-width: 600px;
 		}
 		&__left {
-			padding: 120px 0 0 0;
 			text-align: left;
 		}
 		&__right {
