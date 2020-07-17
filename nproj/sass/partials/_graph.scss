@@ -10,12 +10,12 @@
 	&__left {
 		display: flex;
     flex-direction: column;
+		justify-content: center;
+		align-items: center;
   }
 	&__img {
-    max-width: 100%;
-  }
-	&__right {
-    padding: 20px 0 0 0;
+		display: block;
+    max-width: 330px;
   }
 	&__subheadline {
 		font-size: 24px;
@@ -35,6 +35,7 @@
 }
 @media screen and (min-width: 768px) {
 	.graph {
+		align-items: stretch;
 		&__headline {
 			@include fontHeadlineBig;
 			padding-bottom: 50px;
@@ -48,6 +49,16 @@
 			font-size: 16px;
 			padding: 0;
 			max-width: 450px;
+		}
+	}
+	.indent {
+		padding: 0;
+	}
+}
+@media screen and (min-width: 992px) {
+	.graph {
+		.img_two{
+			transform: translate(0, 110px);
 		}
 		&__right {
 			text-align: left;

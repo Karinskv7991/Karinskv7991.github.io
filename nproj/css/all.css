@@ -572,12 +572,12 @@ body {
 .graph__left {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .graph__img {
-  max-width: 100%;
-}
-.graph__right {
-  padding: 20px 0 0 0;
+  display: block;
+  max-width: 330px;
 }
 .graph__subheadline {
   font-size: 24px;
@@ -597,6 +597,9 @@ body {
 }
 
 @media screen and (min-width: 768px) {
+  .graph {
+    align-items: stretch;
+  }
   .graph__headline {
     text-align: center;
     font-size: 48px;
@@ -613,6 +616,15 @@ body {
     font-size: 16px;
     padding: 0;
     max-width: 450px;
+  }
+
+  .indent {
+    padding: 0;
+  }
+}
+@media screen and (min-width: 992px) {
+  .graph .img_two {
+    transform: translate(0, 110px);
   }
   .graph__right {
     text-align: left;
