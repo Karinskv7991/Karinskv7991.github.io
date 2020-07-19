@@ -141,7 +141,7 @@ body {
 }
 
 .top-of-page {
-  background: rgba(126, 182, 255, 0.4);
+  background: #7eb6ff;
   padding-top: 5px;
 }
 
@@ -360,13 +360,9 @@ body {
   }
   .info__headline {
     font-size: 38px;
-    text-align: left;
   }
   .info__text {
     max-width: 600px;
-  }
-  .info__left {
-    text-align: left;
   }
   .info__right {
     padding: 0;
@@ -383,9 +379,13 @@ body {
   .info__btn {
     font-size: 18px;
   }
+  .info__headline {
+    text-align: left;
+  }
   .info__text {
     font-size: 24px;
     line-height: 38px;
+    text-align: left;
   }
   .info__headline {
     font-size: 48px;
@@ -559,7 +559,6 @@ body {
 .graph {
   padding-top: 100px;
   margin: 0 auto;
-  min-height: 100vh;
   text-align: center;
 }
 .graph__headline {
@@ -578,6 +577,7 @@ body {
 .graph__img {
   display: block;
   max-width: 330px;
+  width: 100%;
 }
 .graph__subheadline {
   font-size: 24px;
@@ -599,6 +599,7 @@ body {
 @media screen and (min-width: 768px) {
   .graph {
     align-items: stretch;
+    padding-bottom: 110px;
   }
   .graph__headline {
     text-align: center;
@@ -637,4 +638,97 @@ body {
     display: flex;
     flex-direction: row;
   }
+}
+.form {
+  padding-top: 50px;
+  text-align: center;
+  color: #000;
+  display: flex;
+  justify-content: center;
+}
+.form__headline {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: #000000;
+  padding-bottom: 10px;
+}
+.form__subheadline {
+  font-size: 16px;
+}
+.form__fields {
+  box-sizing: border-box;
+  margin-top: 30px;
+}
+.form__email {
+  width: 320px;
+  height: 34px;
+  border: 0.4px solid #7EB6FF;
+  box-sizing: border-box;
+  border-radius: 21px;
+  padding-left: 16px;
+  align-self: center;
+  background: #7EB6FF;
+}
+.form__email:hover {
+  border: 1px solid #FF6422;
+  transition: 0.3s;
+}
+.form__email:-webkit-input-placeholder {
+  font-size: 12px;
+}
+.form__btn {
+  position: absolute;
+  box-sizing: border-box;
+  border: 0.4px solid #7EB6FF;
+  background-color: #FFFFFF;
+  width: 132px;
+  height: 34px;
+  cursor: pointer;
+  color: #000;
+  margin-left: -122px;
+  border-radius: 0 21px 21px 0;
+  opacity: 1;
+}
+.form__btn:hover {
+  border: 1px solid #FF6422;
+  transition: 0.3s;
+}
+
+@media screen and (min-width: 768px) {
+  .form__headline {
+    font-size: 36px;
+    padding-bottom: 15px;
+  }
+  .form__subheadline {
+    font-size: 24px;
+  }
+  .form__fields {
+    box-sizing: border-box;
+    width: 640px;
+    height: 66px;
+    margin-top: 50px;
+  }
+  .form__email {
+    width: 640px;
+    height: 66px;
+    border-radius: 41px;
+    padding-left: 30px;
+  }
+  .form__email::-webkit-input-placeholder {
+    font-size: 24px;
+    padding: 8px 0 0 0;
+  }
+  .form__btn {
+    width: 238px;
+    height: 66px;
+    margin-left: -238px;
+    border-radius: 0 41px 41px 0;
+    font-size: 24px;
+    font-weight: bold;
+    color: #000;
+  }
+}
+.ww {
+  min-height: 100vh;
 }

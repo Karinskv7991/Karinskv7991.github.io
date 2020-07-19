@@ -1,7 +1,6 @@
 .graph {
 	padding-top: 100px;
 	margin: 0 auto;
-	min-height: 100vh;
 	text-align: center;
 	&__headline {
 		@include fontHeadline;
@@ -16,6 +15,7 @@
 	&__img {
 		display: block;
     max-width: 330px;
+		width: 100%;
   }
 	&__subheadline {
 		font-size: 24px;
@@ -36,6 +36,7 @@
 @media screen and (min-width: 768px) {
 	.graph {
 		align-items: stretch;
+		padding-bottom: 110px;
 		&__headline {
 			@include fontHeadlineBig;
 			padding-bottom: 50px;
