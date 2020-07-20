@@ -643,8 +643,6 @@ body {
   padding-top: 50px;
   text-align: center;
   color: #000;
-  display: flex;
-  justify-content: center;
 }
 .form__headline {
   text-align: center;
@@ -657,42 +655,39 @@ body {
   font-size: 16px;
 }
 .form__fields {
-  box-sizing: border-box;
+  display: block;
+  margin: 0 auto;
+  max-width: 640px;
+  width: 100%;
+  border: 1px solid #7EB6FF;
+  border-radius: 42px;
   margin-top: 30px;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow: hidden;
+  font-size: 13px;
 }
 .form__email {
-  width: 320px;
-  height: 34px;
-  border: 0.4px solid #7EB6FF;
-  box-sizing: border-box;
-  border-radius: 21px;
-  padding-left: 16px;
-  align-self: center;
+  border: none;
+  outline: none;
+  flex: 1;
+  padding: 5px 15px;
+  font-size: inherit;
   background: #7EB6FF;
 }
-.form__email:hover {
-  border: 1px solid #FF6422;
-  transition: 0.3s;
-}
 .form__email:-webkit-input-placeholder {
-  font-size: 12px;
+  font-size: inherit;
+  color: #fff;
 }
 .form__btn {
-  position: absolute;
-  box-sizing: border-box;
-  border: 0.4px solid #7EB6FF;
+  border: none;
+  outline: none;
   background-color: #FFFFFF;
-  width: 132px;
-  height: 34px;
+  padding: 7px 40px;
   cursor: pointer;
   color: #000;
-  margin-left: -122px;
-  border-radius: 0 21px 21px 0;
-  opacity: 1;
-}
-.form__btn:hover {
-  border: 1px solid #FF6422;
-  transition: 0.3s;
+  font-size: inherit;
+  font-weight: 700;
 }
 
 @media screen and (min-width: 768px) {
@@ -704,29 +699,30 @@ body {
     font-size: 24px;
   }
   .form__fields {
-    box-sizing: border-box;
-    width: 640px;
-    height: 66px;
+    font-size: 20px;
     margin-top: 50px;
   }
   .form__email {
-    width: 640px;
-    height: 66px;
-    border-radius: 41px;
-    padding-left: 30px;
-  }
-  .form__email::-webkit-input-placeholder {
-    font-size: 24px;
-    padding: 8px 0 0 0;
+    padding: 10px 20px;
   }
   .form__btn {
-    width: 238px;
-    height: 66px;
-    margin-left: -238px;
-    border-radius: 0 41px 41px 0;
+    padding: 10px 60px;
+  }
+  .form__btn:hover {
+    background: #7eb6ff;
+    color: #fff;
+    transition: all 0.5s ease;
+  }
+}
+@media screen and (min-width: 992px) {
+  .form__fields {
     font-size: 24px;
-    font-weight: bold;
-    color: #000;
+  }
+  .form__email {
+    padding: 14px 30px;
+  }
+  .form__btn {
+    padding: 14px 74px;
   }
 }
 .ww {
