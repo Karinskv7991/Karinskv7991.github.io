@@ -899,6 +899,10 @@ body {
   .footer__socials-big-link:last-child {
     padding: 0;
   }
+
+  .signup-link_login {
+    padding: 7px 23px;
+  }
 }
 @media screen and (min-width: 1280px) {
   .footer__logo {
