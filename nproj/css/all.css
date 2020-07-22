@@ -643,6 +643,7 @@ body {
   padding-top: 50px;
   text-align: center;
   color: #000;
+  margin-bottom: 100px;
 }
 .form__headline {
   text-align: center;
@@ -690,6 +691,11 @@ body {
   font-weight: 700;
 }
 
+@media screen and (max-width: 411px) {
+  .form__btn {
+    padding: 7px 20px;
+  }
+}
 @media screen and (min-width: 768px) {
   .form__headline {
     font-size: 36px;
@@ -727,4 +733,210 @@ body {
 }
 .ww {
   min-height: 100vh;
+}
+
+.footer {
+  background: url(../images/bg-footer.png) center top/cover no-repeat;
+  color: #FFFFFF;
+  padding: 90px 0 50px;
+  font-size: 9px;
+}
+.footer__logo {
+  font-size: 16px;
+  margin-bottom: 15px;
+  color: #000000;
+}
+.footer__socials {
+  display: flex;
+}
+.footer__socials-link {
+  display: inline-block;
+}
+.footer__socials-icon {
+  display: block;
+  width: 10px;
+  height: 10px;
+  padding-right: 17px;
+}
+.footer__contact {
+  display: flex;
+  flex-direction: column;
+}
+.footer__contact-link {
+  padding-bottom: 11px;
+}
+.footer__contact-link:last-child {
+  padding: 0;
+}
+.footer__contact-icon {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  padding-right: 10px;
+}
+.footer__contact-tel {
+  color: #fff;
+}
+.footer__contact-adress {
+  color: #fff;
+}
+.footer__contact-title {
+  display: block;
+  padding-bottom: 13px;
+}
+.footer__signup {
+  display: none;
+}
+.footer__socials-big {
+  display: none;
+}
+.footer__links {
+  margin: 0 17px 0 30px;
+  display: flex;
+  justify-content: space-around;
+}
+.footer__list {
+  margin-right: 20px;
+  justify-content: space-around;
+}
+.footer__list:last-child {
+  margin: 0;
+}
+.footer__list-item {
+  padding-bottom: 11px;
+}
+.footer__list-item:last-child {
+  padding: 0;
+}
+.footer__list-link {
+  display: block;
+  color: #fff;
+}
+
+.wrapper-indent {
+  flex-direction: row;
+}
+
+@media screen and (max-width: 411px) {
+  .footer__list {
+    margin-right: 5px;
+  }
+  .footer__links {
+    margin: 0 5px 0 10px;
+  }
+  .footer__contact-icon {
+    padding-right: 0;
+  }
+
+  .wrapper {
+    padding: 0 5px 0;
+  }
+}
+@media screen and (min-width: 411px) and (max-width: 516px) {
+  .footer {
+    font-size: 13px;
+  }
+  .footer__socials-icon {
+    width: 13px;
+    height: 13px;
+  }
+  .footer__contact-icon {
+    padding-right: 0;
+  }
+
+  .wrapper {
+    padding: 0 5px 0;
+  }
+}
+@media screen and (min-width: 516px) {
+  .footer {
+    font-size: 15px;
+    padding: 120px 0 50px;
+  }
+  .footer__socials-icon {
+    width: 16px;
+    height: 16px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer {
+    font-size: 16px;
+    padding: 220px 60px 80px;
+  }
+  .footer__logo {
+    font-size: 30px;
+  }
+  .footer__socials {
+    display: none;
+  }
+  .footer__signup {
+    display: block;
+  }
+  .footer__signup-link {
+    display: inline-block;
+    color: #fff;
+    border: 1px solid #FF6422;
+    border-radius: 26px;
+    padding: 7px 16px;
+  }
+  .footer__signup-link:hover {
+    background: #FF6422;
+    transition: all 0.5s ease;
+  }
+
+  .wrapper {
+    padding: 0 5px 0;
+  }
+}
+@media screen and (min-width: 992px) {
+  .footer__socials-big {
+    display: block;
+  }
+  .footer__socials-big-link {
+    display: inline-block;
+    padding-right: 23px;
+  }
+  .footer__socials-big-link:last-child {
+    padding: 0;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .footer__logo {
+    font-size: 36px;
+  }
+  .footer__socials-big-link {
+    padding-right: 25px;
+  }
+  .footer__list {
+    margin-right: 60px;
+  }
+  .footer__list-item {
+    padding-bottom: 25px;
+  }
+  .footer__list-item:last-child {
+    padding: 0;
+  }
+  .footer__contact-link {
+    padding-bottom: 25px;
+  }
+  .footer__contact-link:last-child {
+    padding: 0;
+  }
+  .footer__contact-icon {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    padding-right: 10px;
+  }
+  .footer__contact-title {
+    display: block;
+    padding-bottom: 25px;
+  }
+  .footer__socials-big-icon {
+    width: 20px;
+    height: 20px;
+  }
+  .footer__socials-big-icon:hover {
+    fill: #FF6422;
+  }
 }
