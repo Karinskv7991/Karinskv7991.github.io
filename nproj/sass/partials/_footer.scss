@@ -16,8 +16,9 @@
 	}
 	&__socials-icon {
 		display: block;
-		width: 10px;
-		height: 10px;
+		font-size: 10px;
+		color: #FFFFFF;
+		opacity: 0.5;
 		padding-right: 17px;
 	}
 	&__contact {
@@ -98,11 +99,13 @@
 	.footer {
 		font-size: 13px;
 		&__socials-icon  {
-			width: 13px;
-			height: 13px;
+			font-size: 15px;
 		}
 		&__contact-icon {
 			padding-right: 0;
+		}
+		&__logo {
+			font-size: 18px;
 		}
 	}
 	.wrapper {
@@ -114,8 +117,10 @@
 		font-size: 15px;
 		padding: 120px 0 50px;
 		&__socials-icon  {
-			width: 16px;
-			height: 16px;
+			font-size: 16px;
+		}
+		&__logo {
+			font-size: 22px;
 		}
 	}
 }
@@ -125,23 +130,6 @@
 		padding: 220px 60px 80px;
 		&__logo {
 			font-size: 30px;
-		}
-		&__socials {
-			display: none;
-		}
-		&__signup {
-			display: block;
-		}
-		&__signup-link {
-			display: inline-block;
-			color: #fff;
-			border: 1px solid #FF6422;
-			border-radius: 26px;
-			padding: 7px 16px;
-			&:hover {
-				background: #FF6422;
-				transition: all 0.5s ease;
-			}
 		}
 	}
 	.wrapper {
@@ -153,11 +141,41 @@
 		&__socials-big {
 			display: block;
 		}
+		&__signup {
+			display: block;
+		}
+		&__contact-icon {
+			width: 20px;
+			height: 20px;
+		}
+		&__signup-link {
+			display: inline-block;
+			color: #fff;
+			border: 1px solid #FF6422;
+			border-radius: 26px;
+			padding: 7px 16px;
+			transition: all 0.5s ease;
+			&:hover {
+				background: #FF6422;
+			}
+		}
 		&__socials-big-link {
 			display: inline-block;
 			padding-right: 23px;
 			&:last-child {
 				padding: 0;
+			}
+		}
+		&__socials {
+			display: none;
+		}
+		&__socials-big-icon{
+			font-size: 22px;
+			color: #FFFFFF;
+			opacity: 0.5;
+			&:hover {
+				color: #FF6422;
+				opacity: 0.9;
 			}
 		}
 	}
@@ -175,7 +193,7 @@
 			padding-right: 25px;
 		}
 		&__list {
-			margin: 0 60px 0 200px;
+			margin: 0 68px 0 200px;
 		}
 		&__list-item {
 			padding-bottom: 25px;
@@ -199,13 +217,11 @@
 			display: block;
 			padding-bottom: 25px;
 		}
-		&__socials-big-icon{
-			width: 20px;
-			height: 20px;
-			&:hover {
-				fill: #FF6422;
-			}
-		}
+		// &__socials-big-icon{
+		// 	font-size: 20px;
+		// 	color: #FFFFFF;
+		// 	opacity: 0.5;
+		// }
 		&__signup-link {
 			margin-right: 9px;
 			&:last-child {

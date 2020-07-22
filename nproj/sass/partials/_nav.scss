@@ -56,9 +56,9 @@ body {
 	text-transform: uppercase;
 	color: #000000;
 	line-height: 2;
+	transition: 0.5s ease 0s;
 	&:hover {
 		color: #FFFFFF;
-		transition: 0.7s ease 0s;
 	}
 }
 .burger {

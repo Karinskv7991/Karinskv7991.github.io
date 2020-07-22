@@ -31,6 +31,7 @@
 		padding: 5px 15px;
 		font-size: inherit;
 		background: #7EB6FF;
+		color: #fff;
 		&:-webkit-input-placeholder {
 			font-size: inherit;
   		color: #fff;
@@ -72,10 +73,10 @@
 		}
 		&__btn {
 			padding: 10px 60px;
+			transition: all 0.5s ease;
 			&:hover {
 				background: #7eb6ff;
 				color: #fff;
-				transition: all 0.5s ease;
 			}
 		}
 	}

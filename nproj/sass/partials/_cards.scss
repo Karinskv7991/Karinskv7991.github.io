@@ -9,7 +9,6 @@
 .slider {
 	display: flex;
 	align-items: stretch;
-	box-sizing: border-box;
 	text-align: center;
 	min-width: 0;
 	margin: 0 auto;
@@ -17,7 +16,7 @@
 	&__item {
 		border: 1px solid #7EB6FF;
 		padding: 45px 20px 24px;
-		box-sizing: border-box;
+			box-sizing: border-box;
 		// display: flex;
 		width: 330px !important;
 		min-width: 0;

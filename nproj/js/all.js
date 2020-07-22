@@ -19,7 +19,7 @@
 				burger.classList.remove("close");
       }
 
-			// слайдер для 2 секции
+			// слайдер для секции cards
 
 			$('.slider').slick({
 				arrows: true,
@@ -27,6 +27,35 @@
 				nextArrow: '<i class="fas fa-chevron-right next_arrow"></i>',
 				dots: false,
 				slidesToShow: 3,
+				responsive: [
+		    {
+		      breakpoint: 992,
+		      settings: {
+		        slidesToShow: 2,
+		        slidesToScroll: 1,
+						dots: true,
+		      }
+		    },
+				{
+		      breakpoint: 768,
+		      settings: {
+		        slidesToShow: 1,
+		        slidesToScroll: 1,
+						dots: true,
+		      }
+		    }
+		  ]
+			});
+
+			// слайдер для секции testimonials
+
+			$('.sliders').slick({
+				arrows: true,
+				prevArrow: '<i class="fas fa-chevron-left prev_arrow"></i>',
+				nextArrow: '<i class="fas fa-chevron-right next_arrow"></i>',
+				dots: true,
+				slidesToShow: 3,
+				centerMode: true,
 				responsive: [
 		    {
 		      breakpoint: 992,
