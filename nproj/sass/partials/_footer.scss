@@ -166,12 +166,13 @@
 	.footer {
 		&__logo {
 			font-size: 36px;
+			margin-bottom: 25px;
 		}
 		&__socials-big-link {
 			padding-right: 25px;
 		}
 		&__list {
-			margin-right: 60px;
+			margin: 0 60px 0 200px;
 		}
 		&__list-item {
 			padding-bottom: 25px;
@@ -200,6 +201,12 @@
 			height: 20px;
 			&:hover {
 				fill: #FF6422;
+			}
+		}
+		&__signup-link {
+			margin-right: 9px;
+			&:last-child {
+				margin: 0;
 			}
 		}
 	}

@@ -903,12 +903,13 @@ body {
 @media screen and (min-width: 1280px) {
   .footer__logo {
     font-size: 36px;
+    margin-bottom: 25px;
   }
   .footer__socials-big-link {
     padding-right: 25px;
   }
   .footer__list {
-    margin-right: 60px;
+    margin: 0 60px 0 200px;
   }
   .footer__list-item {
     padding-bottom: 25px;
@@ -938,5 +939,11 @@ body {
   }
   .footer__socials-big-icon:hover {
     fill: #FF6422;
+  }
+  .footer__signup-link {
+    margin-right: 9px;
+  }
+  .footer__signup-link:last-child {
+    margin: 0;
   }
 }
