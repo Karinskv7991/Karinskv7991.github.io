@@ -1,6 +1,5 @@
 .cards {
 	padding: 70px 0 0 0;
-	min-width: 0;
   &__headline{
     @include fontHeadline;
     padding: 0 0 50px 0;
@@ -8,20 +7,16 @@
 }
 .slider {
 	display: flex;
-	align-items: stretch;
+	align-items: center;
 	text-align: center;
-	min-width: 0;
 	margin: 0 auto;
 	max-width: 1170px;
 	&__item {
 		border: 1px solid #7EB6FF;
 		padding: 45px 20px 24px;
-			box-sizing: border-box;
-		// display: flex;
+		box-sizing: border-box;
 		width: 330px !important;
-		min-width: 0;
 		margin: 0 10px;
-		// justify-content: space-around;
 	}
 	&__img {
 		display: block;

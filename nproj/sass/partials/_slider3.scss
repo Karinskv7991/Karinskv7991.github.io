@@ -75,3 +75,31 @@
 		}
 	}
 }
+@media screen and (min-width: 992px) {
+	.sliders {
+		.slick-dots {
+			button {
+				width: 20px;
+				height: 20px;
+				background-color: #ffffff;
+			}
+		}
+		.slick-arrow {
+			width: 31px;
+			height: 56px;
+		}
+		.prev_arrow,
+		.next_arrow {
+			font-size: 56px;
+			color: #242424;
+		}
+		.slick-active {
+			button {
+				background: #7EB6FF;
+				&:before {
+					content: '';
+				}
+			}
+		}
+	}
+}
