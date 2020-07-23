@@ -10,7 +10,7 @@
 	align-items: flex-start;
 }
 .slick-slide {
-	width: 100%;
+	margin: 0 20px;
 }
 .sliders {
 	position: relative;
@@ -76,6 +76,9 @@
 	}
 }
 @media screen and (min-width: 992px) {
+	.slick-slide {
+		margin: 0 50px;
+	}
 	.sliders {
 		.slick-dots {
 			button {

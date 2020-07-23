@@ -55,7 +55,7 @@
 				nextArrow: '<i class="fas fa-chevron-right next_arrow"></i>',
 				dots: true,
 				slidesToShow: 3,
-				centerMode: true,
+				// centerMode: true,
 				responsive: [
 		    {
 		      breakpoint: 992,
