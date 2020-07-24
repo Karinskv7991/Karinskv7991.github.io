@@ -8,9 +8,11 @@
 .slick-track {
 	display: flex;
 	align-items: flex-start;
+	justify-content: space-between;
 }
 .slick-slide {
-	margin: 0 20px;
+	display: block;
+	flex: 0 0 330px;
 }
 .slick-slide > div {
 	height: 100%
@@ -79,9 +81,6 @@
 	}
 }
 @media screen and (min-width: 992px) {
-	.slick-slide {
-		margin: 0 50px;
-	}
 	.sliders {
 		.slick-dots {
 			button {

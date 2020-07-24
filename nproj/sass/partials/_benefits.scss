@@ -1,0 +1,10 @@
+.benefits {
+	padding: 100px 0 0 0;
+	&__headline {
+		@include fontHeadline;
+    padding: 0 0 50px 0;
+	}
+}
+.b-slider {
+
+}

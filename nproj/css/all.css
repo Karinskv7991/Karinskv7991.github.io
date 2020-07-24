@@ -481,6 +481,7 @@ body {
 }
 .slick-list {
   overflow: hidden;
+  width: 100%;
 }
 
 .draggable {
@@ -491,10 +492,13 @@ body {
 .slick-track {
   display: flex;
   align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
 }
 
 .slick-slide {
-  margin: 0 20px;
+  display: block;
+  flex: 0 0 330px;
 }
 
 .slick-slide > div {
@@ -563,11 +567,17 @@ body {
   content: "";
 }
 
-@media screen and (min-width: 992px) {
-  .slick-slide {
-    margin: 0 50px;
-  }
+.benefits {
+  padding: 100px 0 0 0;
 }
+.benefits__headline {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: #000000;
+  padding: 0 0 50px 0;
+}
+
 .graph {
   padding-top: 100px;
   margin: 0 auto;
@@ -772,10 +782,12 @@ body {
 .slick-track {
   display: flex;
   align-items: flex-start;
+  justify-content: space-between;
 }
 
 .slick-slide {
-  margin: 0 20px;
+  display: block;
+  flex: 0 0 330px;
 }
 
 .slick-slide > div {
@@ -845,10 +857,6 @@ body {
 }
 
 @media screen and (min-width: 992px) {
-  .slick-slide {
-    margin: 0 50px;
-  }
-
   .sliders .slick-dots button {
     width: 20px;
     height: 20px;
