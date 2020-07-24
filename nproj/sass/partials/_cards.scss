@@ -20,7 +20,7 @@
 		height: 100%;
 		display: flex !important;
 		flex-direction: column;
-		justify-content: space-between;
+		// justify-content: space-between;
 	}
 	&__img {
 		display: block;
@@ -42,6 +42,9 @@
 		line-height: 19px;
 		font-size: 12px;
 	}
+}
+.slider__box {
+	height: 100%
 }
 @media screen and (min-width: 768px){
 	.cards {
