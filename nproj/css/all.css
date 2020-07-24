@@ -498,7 +498,6 @@ body {
 
 .slick-slide {
   display: block;
-  flex: 0 0 330px;
 }
 
 .slick-slide > div {
@@ -787,7 +786,6 @@ body {
 
 .slick-slide {
   display: block;
-  flex: 0 0 330px;
 }
 
 .slick-slide > div {
