@@ -20,7 +20,7 @@
 		box-sizing: border-box;
 		margin: 0 auto;
 		height: 100%;
-		display: flex;
+		display: flex !important;
 		flex-direction: column;
 		justify-content: space-between;
 	}
@@ -40,8 +40,8 @@
 		padding: 20px 0 40px 0;
 	}
 	&__item-text {
-		// font-size: 12px;
-		// line-height: 150%;
+		font-size: 12px;
+		line-height: 150%;
 	}
 	&__item-footer {
 		padding: 40px 0 0 0;

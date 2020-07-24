@@ -1,6 +1,5 @@
 .slick-list {
 	overflow: hidden;
-		// width: calc(100% - 50px);
 }
 .draggable  {
 	display: flex;
@@ -9,12 +8,12 @@
 .slick-track {
 	display: flex;
 	align-items: flex-start;
-
-	// overflow: hidden;
 }
 .slick-slide {
-	// width: 100%;
-	// box-sizing: border-box;
+	margin: 0 20px;
+}
+.slick-slide > div {
+	height: 100%
 }
 .slider {
 	position: relative;
@@ -77,5 +76,10 @@
 				content: '';
 			}
 		}
+	}
+}
+@media screen and (min-width: 992px) {
+	.slick-slide {
+		margin: 0 50px;
 	}
 }

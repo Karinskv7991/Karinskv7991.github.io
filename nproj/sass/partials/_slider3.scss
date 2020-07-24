@@ -12,6 +12,9 @@
 .slick-slide {
 	margin: 0 20px;
 }
+.slick-slide > div {
+	height: 100%
+}
 .sliders {
 	position: relative;
 	width: 100%;
