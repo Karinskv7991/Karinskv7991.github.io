@@ -47,6 +47,17 @@
 		  ]
 			});
 
+			// слайдер для секции benefits
+
+			$('.b-slider').slick({
+				arrows: true,
+				prevArrow: '<i class="fas fa-chevron-left prev_arrow"></i>',
+				nextArrow: '<i class="fas fa-chevron-right next_arrow"></i>',
+				dots: true,
+				slidesToShow: 1
+
+			});
+
 			// слайдер для секции testimonials
 
 			$('.sliders').slick({
