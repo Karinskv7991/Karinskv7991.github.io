@@ -1188,6 +1188,7 @@ body {
   box-sizing: border-box;
   border: none;
   outline: none;
+  border-radius: 42px 0 0 42px;
   flex: 1;
   padding: 5px 15px;
   font-size: 13px;
@@ -1204,12 +1205,16 @@ body {
 .form__btn {
   border: none;
   outline: none;
+  border-radius: 0 42px 42px 0;
   background-color: #FFFFFF;
   padding: 7px 40px;
   cursor: pointer;
   color: #000;
   font-size: 13px;
   font-weight: 700;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+       appearance: none;
 }
 
 @media screen and (max-width: 411px) {
