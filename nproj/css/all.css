@@ -1190,7 +1190,7 @@ body {
   outline: none;
   flex: 1;
   padding: 5px 15px;
-  font-size: inherit;
+  font-size: 13px;
   background: #7EB6FF;
   color: #fff;
   -webkit-appearance: none;
@@ -1198,7 +1198,7 @@ body {
        appearance: none;
 }
 .form__email:-webkit-input-placeholder {
-  font-size: inherit;
+  font-size: 13px;
   color: #fff;
 }
 .form__btn {
@@ -1208,7 +1208,7 @@ body {
   padding: 7px 40px;
   cursor: pointer;
   color: #000;
-  font-size: inherit;
+  font-size: 13px;
   font-weight: 700;
 }
 
