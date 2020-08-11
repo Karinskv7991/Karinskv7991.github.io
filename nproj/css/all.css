@@ -1186,6 +1186,7 @@ body {
 }
 .form__email {
   box-sizing: border-box;
+  margin: 0;
   border: none;
   outline: none;
   border-radius: 42px 0 0 42px;
