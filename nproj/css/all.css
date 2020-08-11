@@ -1192,6 +1192,9 @@ body {
   font-size: inherit;
   background: #7EB6FF;
   color: #fff;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+       appearance: none;
 }
 .form__email:-webkit-input-placeholder {
   font-size: inherit;

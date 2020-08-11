@@ -32,6 +32,8 @@
 		font-size: inherit;
 		background: #7EB6FF;
 		color: #fff;
+		-webkit-appearance: none;
+    appearance: none;
 		&:-webkit-input-placeholder {
 			font-size: inherit;
   		color: #fff;
