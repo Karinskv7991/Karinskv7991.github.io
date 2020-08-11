@@ -25,6 +25,7 @@
 		font-size: 13px;
 	}
 	&__email {
+		box-sizing: border-box;
 		border: none;
 		outline: none;
 		flex: 1;

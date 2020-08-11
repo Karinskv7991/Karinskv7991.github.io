@@ -1185,6 +1185,7 @@ body {
   font-size: 13px;
 }
 .form__email {
+  box-sizing: border-box;
   border: none;
   outline: none;
   flex: 1;
