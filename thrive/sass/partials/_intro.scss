@@ -1,6 +1,7 @@
 .column {
 	display: flex;
 	flex-direction: column;
+	margin-top: 30px;
 }
 .intro {
 	display: flex;
@@ -8,9 +9,11 @@
 	max-width: 1170px;
 	margin: 0 auto;
 	text-align: center;
+	overflow-x: hidden;
 	&__information {
 		max-width: 484px;
 		margin-top: 40px;
+		z-index: 2;
 	}
 	&__logo {
 		display: none;
@@ -38,7 +41,7 @@
 		font-size: 16px;
 		font-weight: 700;
 		letter-spacing: 2px;
-		margin-right: 38px;
+		margin-right: 0;
 		padding: 15px 30px;
 		background: transparent;
 		transition: all 0.4s ease;
@@ -53,23 +56,20 @@
 	}
 	&__picture{
 		position: relative;
+		transform: translate(20px,0);
 	}
 	&__img-people{
-		// transform: translate(115px,-70px);
-		// position: relative;
-		z-index: 2;
+		position: relative;
+		z-index: -2;
 	}
 	&__img-bg{
 		position: absolute;
-		top: -43px;
-		left: 0;
-		z-index: 1;
+		top: 0;
+		right: 0;
+		z-index: -10;
 	}
 }
 @media screen and (min-width: 768px) {
-	.column {
-		flex-direction: row;
-	}
 	.intro {
 		text-align: left;
 		&__information {
@@ -91,5 +91,28 @@
 		&__links {
 			margin-top: 63px;
 		}
+		&__links-item{
+			margin-right: 38px;
+		}
+		&__picture{
+			position: relative;
+			transform: translate(115px,-70px);
+		}
+		&__img-people{
+			position: relative;
+			z-index: -2;
+		}
+		&__img-bg{
+			position: absolute;
+			top: -43px;
+			left: 0;
+			z-index: -10;
+		}
+	}
+}
+@media screen and (min-width: 992px){
+	.column {
+		flex-direction: row;
+		margin-top: 0;
 	}
 }
