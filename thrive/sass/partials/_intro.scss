@@ -9,7 +9,8 @@
 	max-width: 1170px;
 	margin: 0 auto;
 	text-align: center;
-	overflow-x: hidden;
+	position: relative;
+	z-index: 1;
 	&__information {
 		max-width: 484px;
 		margin-top: 40px;
@@ -96,7 +97,7 @@
 		}
 		&__picture{
 			position: relative;
-			transform: translate(115px,-70px);
+			transform: translate(15px,-70px);
 		}
 		&__img-people{
 			position: relative;

@@ -3,12 +3,14 @@ body {
 	font-family: 'Manuale', serif;
 	width: 100%;
 	background: #F4F9E2;
-	position: relative;
+	overflow-x: hidden;
 }
 .header {
 	max-width: 1170px;
 	margin: 0 auto;
 	margin-top: 27px;
+	position: relative;
+	z-index: 2;
 }
 .wrapper {
 	padding: 0 15px;
