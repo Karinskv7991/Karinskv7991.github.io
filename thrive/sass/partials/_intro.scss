@@ -52,16 +52,18 @@
 		}
 	}
 	&__picture{
-		transform: translate(120px,-80px);
+		position: relative;
 	}
 	&__img-people{
 		// transform: translate(115px,-70px);
-		display: inline-block;
+		position: relative;
 		z-index: 2;
 	}
 	&__img-bg{
-		display: inline-block;
-		z-index: -10;
+		position: absolute;
+		top: -43px;
+		left: 0;
+		z-index: 1;
 	}
 }
 @media screen and (min-width: 768px) {
