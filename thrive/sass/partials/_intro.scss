@@ -4,9 +4,10 @@
 }
 .intro {
 	display: flex;
-	// align-items: center;
+	align-items: center;
 	max-width: 1170px;
 	margin: 0 auto;
+	text-align: center;
 	&__information {
 		max-width: 484px;
 		margin-top: 40px;
@@ -50,13 +51,17 @@
 			transition: all 0.4s ease;
 		}
 	}
-
+	&__picture{
+		transform: translate(120px,-80px);
+	}
 	&__img-people{
-		position: absolute;
+		// transform: translate(115px,-70px);
 		display: inline-block;
+		z-index: 2;
 	}
 	&__img-bg{
 		display: inline-block;
+		z-index: -10;
 	}
 }
 @media screen and (min-width: 768px) {
@@ -64,6 +69,7 @@
 		flex-direction: row;
 	}
 	.intro {
+		text-align: left;
 		&__information {
 			margin-top: 0;
 		}
