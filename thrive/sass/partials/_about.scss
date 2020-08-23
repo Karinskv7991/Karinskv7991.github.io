@@ -26,15 +26,16 @@
 	&__cards{
 		display: flex;
 		flex-direction: column;
-		// flex-wrap: wrap;
 		width: 100%;
+		align-items: stretch;
 	}
 	&__cards-item{
 		width: calc(100% / 1);
 		position: relative;
 		display: flex;
-		padding: 95px 50px 0 75px;
+		// padding: 95px 50px 0 75px;
 		box-sizing: border-box;
+		flex: 1;
 		&:after{
 			content: '';
 			padding-top: 100%;
@@ -89,7 +90,7 @@
 			flex-wrap: wrap;
 		}
 		&__cards-item{
-			width: 25%;
+			width: calc(100% / 2)
 		}
 		&__item-text{
 			font-size: 32px;
@@ -121,6 +122,9 @@
 		}
 		&__header-text{
 			font-size: 24px;
+		}
+		&__cards-item{
+			width: calc(100% / 4)
 		}
 	}
 }
