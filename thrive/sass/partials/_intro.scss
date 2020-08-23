@@ -11,6 +11,7 @@
 	text-align: center;
 	position: relative;
 	z-index: 1;
+	margin-bottom: 50px;
 	&__information {
 		max-width: 484px;
 		margin-top: 40px;
@@ -56,18 +57,39 @@
 		}
 	}
 	&__picture{
-		position: relative;
-		transform: translate(20px,0);
+		display: none;
+		// position: relative;
+		// transform: translate(0,0);
 	}
-	&__img-people{
-		position: relative;
-		z-index: -2;
+	// &__img-people{
+	// 	position: relative;
+	// 	z-index: -2;
+	// }
+	// &__img-bg{
+	// 	position: absolute;
+	// 	top: 0;
+	// 	right: 0;
+	// 	z-index: -10;
+	// }
+}
+@media screen and (max-width: 414px){
+	.intro{
+		&__title{
+			font-size: 30px;
+		}
+		&__text{
+			font-size: 16px;
+		}
 	}
-	&__img-bg{
-		position: absolute;
-		top: 0;
-		right: 0;
-		z-index: -10;
+}
+@media screen and (min-width: 414px)and(max-width: 768px){
+	.intro{
+		&__title{
+			font-size: 34px;
+		}
+		&__text{
+			font-size: 20px;
+		}
 	}
 }
 @media screen and (min-width: 768px) {
@@ -96,8 +118,9 @@
 			margin-right: 38px;
 		}
 		&__picture{
+			display: block;
 			position: relative;
-			transform: translate(15px,-70px);
+			transform: translate(0,-70px);
 		}
 		&__img-people{
 			position: relative;
