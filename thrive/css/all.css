@@ -571,6 +571,7 @@ body {
 .why__img {
   display: block;
   max-width: 100%;
+  width: 100%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -656,26 +657,25 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  width: 100%;
-  -webkit-box-align: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .about__cards-item {
-  width: calc(100% / 1);
-  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding: 95px 45px 0 50px;
+  width: 100%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
 }
 .about__cards-item:after {
   content: "";
@@ -718,7 +718,7 @@ body {
             flex-direction: column;
   }
 }
-@media screen and (min-width: 556px) {
+@media screen and (min-width: 550px) {
   .about__header-text {
     font-size: 20px;
     margin-top: 0;
@@ -726,19 +726,8 @@ body {
   .about__title {
     margin-bottom: 24px;
   }
-  .about__cards {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
   .about__cards-item {
-    width: calc(100% / 2);
+    width: 50%;
   }
   .about__item-text {
     font-size: 32px;
@@ -755,14 +744,6 @@ body {
   .about__header-text {
     font-size: 20px;
   }
-  .about__cards {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-  }
 }
 @media screen and (min-width: 992px) {
   .about__header-subtitle {
@@ -772,6 +753,6 @@ body {
     font-size: 24px;
   }
   .about__cards-item {
-    width: calc(100% / 4);
+    width: 25%;
   }
 }
