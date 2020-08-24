@@ -414,6 +414,7 @@ body {
   text-align: center;
   position: relative;
   z-index: 1;
+  overflow-x: hidden;
   margin-bottom: 50px;
 }
 .intro__information {
@@ -513,9 +514,9 @@ body {
   .intro__picture {
     display: block;
     position: relative;
-    -webkit-transform: translate(23%, -70px);
-        -ms-transform: translate(23%, -70px);
-            transform: translate(23%, -70px);
+    -webkit-transform: translate(20%, -70px);
+        -ms-transform: translate(20%, -70px);
+            transform: translate(20%, -70px);
   }
   .intro__img-people {
     position: relative;
