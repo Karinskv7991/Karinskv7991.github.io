@@ -58,19 +58,7 @@
 	}
 	&__picture{
 		display: none;
-		// position: relative;
-		// transform: translate(0,0);
 	}
-	// &__img-people{
-	// 	position: relative;
-	// 	z-index: -2;
-	// }
-	// &__img-bg{
-	// 	position: absolute;
-	// 	top: 0;
-	// 	right: 0;
-	// 	z-index: -10;
-	// }
 }
 @media screen and (max-width: 414px){
 	.intro{
@@ -120,7 +108,7 @@
 		&__picture{
 			display: block;
 			position: relative;
-			transform: translate(0,-70px);
+			transform: translate(23%,-70px);
 		}
 		&__img-people{
 			position: relative;
@@ -131,6 +119,7 @@
 			top: -43px;
 			left: 0;
 			z-index: -10;
+			transform: translate(50px,0);
 		}
 	}
 }

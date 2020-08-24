@@ -513,9 +513,9 @@ body {
   .intro__picture {
     display: block;
     position: relative;
-    -webkit-transform: translate(0, -70px);
-        -ms-transform: translate(0, -70px);
-            transform: translate(0, -70px);
+    -webkit-transform: translate(23%, -70px);
+        -ms-transform: translate(23%, -70px);
+            transform: translate(23%, -70px);
   }
   .intro__img-people {
     position: relative;
@@ -526,6 +526,9 @@ body {
     top: -43px;
     left: 0;
     z-index: -10;
+    -webkit-transform: translate(50px, 0);
+        -ms-transform: translate(50px, 0);
+            transform: translate(50px, 0);
   }
 }
 @media screen and (min-width: 992px) {
