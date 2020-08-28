@@ -4,19 +4,19 @@
 	margin-top: 30px;
 }
 .intro {
+	background: #F4F9E2;
 	display: flex;
 	align-items: center;
 	max-width: 1170px;
 	margin: 0 auto;
 	text-align: center;
 	position: relative;
-	z-index: 1;
 	overflow-x: hidden;
-	margin-bottom: 50px;
+	padding-bottom: 50px;
 	&__information {
 		max-width: 484px;
 		margin-top: 40px;
-		z-index: 2;
+		z-index: 1;
 	}
 	&__logo {
 		display: none;
@@ -109,7 +109,7 @@
 		&__picture{
 			display: block;
 			position: relative;
-			transform: translate(20%,-70px);
+			transform: translate(20px,0);
 		}
 		&__img-people{
 			position: relative;

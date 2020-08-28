@@ -70,6 +70,9 @@ input, select {
 }
 input::-webkit-input-placeholder{color:#ebedec;}
 input:focus::-webkit-input-placeholder{color:#ebedec;}
+* {
+  box-sizing: border-box;
+}
 /*@media*/
 
 /* @media (min-width: 1921px){} 													QHD \ UHD
