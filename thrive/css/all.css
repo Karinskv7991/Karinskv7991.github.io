@@ -534,9 +534,9 @@ body {
   .intro__picture {
     display: block;
     position: relative;
-    -webkit-transform: translate(15px, -105px);
-        -ms-transform: translate(15px, -105px);
-            transform: translate(15px, -105px);
+    -webkit-transform: translate(0, -105px);
+        -ms-transform: translate(0, -105px);
+            transform: translate(0, -105px);
   }
   .intro__img-people {
     position: relative;
