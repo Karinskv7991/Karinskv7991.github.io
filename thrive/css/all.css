@@ -116,7 +116,7 @@ input:focus::-webkit-input-placeholder {
 /*@media end*/
 body {
   min-height: 100vh;
-  font-family: "Manuale", serif;
+  font-family: "Inter", sans-serif;
   width: 100%;
   background: #F4F9E2;
   overflow-x: hidden;
@@ -420,7 +420,6 @@ body {
   margin: 0 auto;
   text-align: center;
   position: relative;
-  overflow-x: hidden;
   padding-bottom: 50px;
 }
 .intro__information {
@@ -520,9 +519,9 @@ body {
   .intro__picture {
     display: block;
     position: relative;
-    -webkit-transform: translate(20px, 0);
-        -ms-transform: translate(20px, 0);
-            transform: translate(20px, 0);
+    -webkit-transform: translate(15px, -90px);
+        -ms-transform: translate(15px, -90px);
+            transform: translate(15px, -90px);
   }
   .intro__img-people {
     position: relative;
@@ -533,9 +532,6 @@ body {
     top: -43px;
     left: 0;
     z-index: -10;
-    -webkit-transform: translate(50px, 0);
-        -ms-transform: translate(50px, 0);
-            transform: translate(50px, 0);
   }
 }
 @media screen and (min-width: 992px) {
@@ -599,10 +595,10 @@ body {
             flex-direction: row;
   }
   .why__info {
-    width: 65%;
+    width: 70%;
   }
   .why__img {
-    width: 35%;
+    width: 30%;
   }
 }
 @media screen and (min-width: 992px) {
@@ -1276,7 +1272,12 @@ body {
     margin-top: 30px;
   }
   .footer__bottom {
-    padding: 32px 0 26px 0;
+    padding: 13px 0 13px 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  .footer__bottom {
+    padding: 22px 0 16px 0;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;

@@ -11,7 +11,7 @@
 	margin: 0 auto;
 	text-align: center;
 	position: relative;
-	overflow-x: hidden;
+	// overflow-x: hidden;
 	padding-bottom: 50px;
 	&__information {
 		max-width: 484px;
@@ -109,7 +109,7 @@
 		&__picture{
 			display: block;
 			position: relative;
-			transform: translate(20px,0);
+			transform: translate(15px,-90px);
 		}
 		&__img-people{
 			position: relative;
@@ -120,7 +120,7 @@
 			top: -43px;
 			left: 0;
 			z-index: -10;
-			transform: translate(50px,0);
+			// transform: translate(20px,0);
 		}
 	}
 }

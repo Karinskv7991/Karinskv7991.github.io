@@ -83,7 +83,14 @@
 			margin-top: 30px;
 		}
 		&__bottom{
-			padding: 32px 0 26px 0;
+			padding: 13px 0 13px 0;
+		}
+	}
+}
+@media screen and (max-width: 768px){
+	.footer{
+		&__bottom{
+			padding: 22px 0 16px 0;
 			justify-content: center;
 		}
 	}
