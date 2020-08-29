@@ -75,6 +75,7 @@
 		flex-direction: row;
 		&__img{
 			width: 35%;
+			object-fit: cover;
 		}
 		&__info{
 			width: 65%;

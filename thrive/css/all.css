@@ -127,8 +127,7 @@ body {
   margin: 0 auto;
   padding-top: 27px;
   position: relative;
-  z-index: 2;
-  background: #F4F9E2;
+  z-index: 5;
 }
 
 .wrapper {
@@ -499,7 +498,7 @@ body {
   }
   .intro__title {
     margin-top: 55px;
-    font-size: 48px;
+    font-size: 42px;
   }
   .intro__logo {
     display: block;
@@ -508,30 +507,13 @@ body {
     font-weight: 600;
   }
   .intro__text {
-    margin-top: 70px;
+    margin-top: 50px;
   }
   .intro__links {
     margin-top: 63px;
   }
   .intro__links-item {
     margin-right: 38px;
-  }
-  .intro__picture {
-    display: block;
-    position: relative;
-    -webkit-transform: translate(15px, -90px);
-        -ms-transform: translate(15px, -90px);
-            transform: translate(15px, -90px);
-  }
-  .intro__img-people {
-    position: relative;
-    z-index: -2;
-  }
-  .intro__img-bg {
-    position: absolute;
-    top: -43px;
-    left: 0;
-    z-index: -10;
   }
 }
 @media screen and (min-width: 992px) {
@@ -541,6 +523,31 @@ body {
         -ms-flex-direction: row;
             flex-direction: row;
     margin-top: 0;
+  }
+
+  .intro__title {
+    font-size: 48px;
+  }
+  .intro__text {
+    margin-top: 70px;
+  }
+  .intro__picture {
+    display: block;
+    position: relative;
+    -webkit-transform: translate(15px, -105px);
+        -ms-transform: translate(15px, -105px);
+            transform: translate(15px, -105px);
+  }
+  .intro__img-people {
+    position: relative;
+    z-index: -2;
+  }
+  .intro__img-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -10;
   }
 }
 .why {
@@ -599,6 +606,8 @@ body {
   }
   .why__img {
     width: 30%;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 }
 @media screen and (min-width: 992px) {
@@ -1029,6 +1038,8 @@ body {
   }
   .help__img {
     width: 35%;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   .help__info {
     width: 65%;
@@ -1138,6 +1149,8 @@ body {
   }
   .contacts__img {
     width: 35%;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   .contacts__info {
     width: 65%;
@@ -1183,6 +1196,8 @@ body {
   width: 100%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .footer__top-info {
   width: 100%;
@@ -1225,7 +1240,7 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
 }
-.footer__top-contact-tel, .footer__top-contact-number {
+.footer__top-contact-tel {
   display: block;
   color: rgba(34, 53, 111, 0.5);
 }
