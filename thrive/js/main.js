@@ -19,6 +19,16 @@ function menuClose() {
 	burger.classList.remove("close");
 }
 
-//анимация при скролле
+//анимация страницы при скролле
 let wow = new WOW();
 wow.init()
+
+//плавный переход по ссылкам
+$(document).ready(function(){
+    $("#nav").on("click","a", function (event) {
+        event.preventDefault();
+        var id  = $(this).attr('href'),
+            top = $(id).offset().top;
+        $('body,html').animate({scrollTop: top}, 1500);
+    });
+});
